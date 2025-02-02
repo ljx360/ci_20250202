@@ -40,13 +40,14 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
-        sudo docker image prune --all --force
+        echo "init"
+        #sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+        #sudo docker image prune --all --force
 
 
-        echo ""
-        echo "apt-get remove"
-        sudo -E apt -yqq purge azure* docker* dotnet* firefox* ghc* google* llvm* mongodb* mysql* openjdk* php* powershell* snap* zulu*
+        #echo ""
+        #echo "apt-get remove"
+        #sudo -E apt -yqq purge azure* docker* dotnet* firefox* ghc* google* llvm* mongodb* mysql* openjdk* php* powershell* snap* zulu*
 
 
         echo ""
